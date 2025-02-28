@@ -1,23 +1,100 @@
-<html>
-	<head>
-		<title>
-			My Resume
-		</title>
-		<link rel="stylesheet" href="index.css">
-	</head>
-	<body>
-		<h1 align = 'center'>
-			RESUME
-		</h1>
-		<h2 align = "center">
-			Badireddy Yaswanth
-		</h2>
-		<hr>
-		<h3 align = "right">
-			yaswanth.badireddy@sasi.ac.in
-		</h3>
-		<h3 align = "left">
-			xxxxxxxxxx
-		</h3>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .id-card {
+            width: 350px;
+            background: white;
+            border-radius: 10px;
+            padding: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            font-family: Arial, sans-serif;
+            border: 2px solid black;
+        }
+        .header img {
+            width: 100%;
+        }
+        .photo {
+            margin-top: 15px;
+            border: 2px solid red;
+            display: inline-block;
+            padding: 5px;
+        }
+        .photo img {
+            width: 120px;
+            height: 120px;
+            border-radius: 0;
+        }
+        .details {
+            margin-top: 10px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .details p {
+            margin: 5px 0;
+        }
+        .details span {
+            font-weight: bold;
+            color: #d32f2f;
+        }
+        .barcode {
+            margin-top: 10px;
+        }
+        .bottom-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            margin-top: 10px;
+            padding: 0 10px;
+        }
+        .left-info {
+            text-align: left;
+        }
+        .right-info {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="id-card">
+        <div class="header">
+            <img src="https://www.rubaitulazad.com/bucket/2023/04/SASI-LOGO-960x188-1.png" alt="SASI Logo">
+        </div>
+        <div class="photo">
+            <img src="profile.jpg" alt="ID Photo">
+        </div>
+        <div class="details">
+            <p><span>Name:</span> BADIREDDY YASWANTH</p>
+            <p><span>Course:</span> B.Tech - CSE</p>
+            <p><span>ID:</span> 24K65A0502</p>
+        </div>
+        <div class="barcode">
+            <img src="barcode.png.gif" alt="Barcode">
+        </div>
+        <div class="bottom-info">
+            <div class="left-info">
+                <p><span>Aadhar No:</span> 370139091294</p>
+                <p><span>Father:</span> B CHITTIBABU</p>
+                <p><span>Village:</span> PENUGONDA</p>
+                <p><span>Cell:</span> 9652958129</p>
+            </div>
+            <div class="right-info">
+                <p><span>Valid:</span> 2024-28</p>
+                <p><span>B.G:</span></p>
+                <p>Principal</p>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
